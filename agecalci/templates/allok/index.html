@@ -1,0 +1,37 @@
+{% extends 'allok/basic.html' %}
+{%load static%}
+{%block link%}https://honvin.tech/age-calculator/ {%endblock%}
+
+
+{%block metadesc%} One Stop Solutions For All Your Needs of Games, Utility, Social, etc {%endblock%}
+{%block link1%}https://honvin.tech/age-calculator/ {%endblock%}
+
+{%block title%}Age Calculator - HonVin Solutions {%endblock%}
+
+
+{%block css%}
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
+  <link rel="stylesheet" href="{% static 'cssage/style.css' %}">
+{%endblock%}
+
+{%block body%}
+
+
+ <div class="container py-5 my-5">
+    <h1 class="heading--1">Age Calculator</h1>
+    <input type="date" name="age" class="con__input">
+    <input type="submit" name="submit button" class="con__btn" value="Calculate">
+
+
+    <h2 class="heading--2">
+    </h2>
+  </div>
+
+
+
+{%endblock%}
+
+{%block js%}
+    <script type="text/javascript" src="{% static 'jsage/app.js' %}"></script> 
+
+{%endblock%}

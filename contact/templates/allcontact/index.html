@@ -1,0 +1,368 @@
+{% extends 'allok/basic.html' %}
+{%load static%}
+{%block metadesc%} One Stop Solutions For All Your Needs of Games, Utility, Social, etc {%endblock%}
+
+{%block title%}Contact Us - HonVin Solutions {%endblock%}
+
+
+
+{%block body%}
+
+<style>
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+   
+   *{
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+   }
+   html{
+     font-size: 62.5%;
+   }
+   
+   body{
+     font-family: 'Montserrat', sans-serif ;
+     line-height: 1.7;
+   }
+   
+   ul li{
+     list-style: none;
+   }
+   a{
+       font-size: 3.6rem;
+       color: gray;
+     text-decoration: none; 
+   }
+   
+   p, li{
+     color: gray;
+     font-size: 1.6rem;
+     margin-bottom: 0.2em;
+     letter-spacing: 0.1em;
+   }
+   
+   h1, h2, h3{
+     margin-bottom: 0.5em;
+     letter-spacing: 0.1em;
+     font-weight: 600;
+     font-size: 3.6rem;
+     color: rgba(209, 101, 19, 0.802);
+   }
+   
+   .navbar{
+     padding: 6rem;
+   }
+   
+   
+   .header{
+     height: 35vh;
+     background: url({% static 'image/nav-back.jpg'%});
+     background-position: center;
+     background-size: cover;
+     background-repeat: no-repeat;
+   }
+   
+   
+   .header .navbar a{
+     color: rgba(209, 101, 19, 0.802);
+   }
+   .header .navbar .logo{
+     float: right;
+   }
+   .header .navbar .nav-items{
+     float: left;
+     font-size: 3.6rem;
+     font-weight: 600;
+   }
+   .header .navbar .nav-item{
+     display: inline-block;
+     padding: 8rem;
+   }
+   .navbar::after{
+     content: '';
+     display: block;
+     clear: both;
+   }
+   
+   
+   /* #################### utility ############### */
+   .container{
+     max-width: 1250px;
+     width: 90%;
+     margin: 0 auto;
+   }
+   
+   .lg-head{
+     font-size: 3.6rem;
+   }
+   
+   .md-head{
+     font-size: 2.2rem;
+   }
+   
+   .text-red{
+     color: rgba(209, 101, 19, 0.802);
+   }
+   
+   .text-grey{
+     color: gray;
+   }
+   .text-black{
+     color: black;
+   }
+   
+   /* ############ utility ########### */
+   
+   
+   .navbar a:hover{
+     border-bottom: 1px solid rgba(209, 101, 19, 0.802);
+   }
+   
+
+    /* ################ footer ########*/
+   
+   .footer{
+     background: url({% static 'image/nav-back.jpg'%});
+     padding: 2rem;
+     text-align: center;
+     background-repeat: no-repeat;
+     background-position: center;
+     background-size: cover;
+   }
+   
+   .social-media-links i{
+     margin: 2rem;
+     
+   }
+
+    /* ##################  contact ############# */
+
+      .contact-form{
+        padding: 10rem 0;
+        font-size: 2rem;
+        background: #f7f7f7;
+      }
+      
+     .form-wrapper .company-address{
+         height: 730px;
+        background: #fff;
+        float: left;
+        width: 49%;
+        padding: 1rem;
+      }
+      
+      .form-wrapper{
+       
+      }
+      .form-wrapper::after{
+        content: '';
+        display: block;
+        clear: both;
+      }
+
+
+      .form-wrapper .company-address i{
+          display: inline-block;
+          margin-right: 1rem;
+      }
+      .form-wrapper .company-address h2{
+          display: inline-block;
+      }
+
+
+
+
+      
+     .form-wrapper .form{
+        background: #fff;
+        float: right;
+        width: 49%;
+      }
+
+
+      .form-wrapper .address-group{
+          margin-bottom: 3rem;
+      }
+
+      .form-wrapper .company-address img{
+          max-width: 90%;
+          min-height: 40rem;
+          object-fit: cover;
+          object-position: right;
+      }
+      .form-wrapper .address-group p{
+          margin-left: 5rem;
+          float: right;
+          padding: 1rem;
+      }
+      .form-wrapper .address-group a{
+          font-size: 1.6rem;
+      }
+
+      /* #################### form ################### */
+
+      .form-wrapper .form{
+          height: 730px;
+          font-size: 2.2rem;
+          background: #fff;
+          width: 49%;
+          float: right;
+          padding: 1rem;
+      }
+
+      .form h1::after{
+          content: '';
+          display: block;
+          border: 2px solid rgba(209, 101, 19, 0.802);
+          width: 90%;
+      }
+ .form-wrapper .form label{
+     display: block;
+
+ }
+ .form-wrapper .form input{
+     padding: 0.5rem;
+     width: 90%;
+ }
+
+ .form-wrapper .form .form-group{
+     border-bottom: 1.2rem;
+
+ }
+
+ .form-wrapper .form label::after{
+     content: '*';
+     color: orange;
+ }
+
+ .form-wrapper .form textarea{
+     width: 90%;
+     height: 225px;
+     padding: 1rem;
+ }
+
+ .form-btn{
+     display: block;
+     margin: 0 auto;
+     padding: 0.5em 3em;
+     font-size: 1.8rem;
+     text-transform: uppercase;
+     background:rgba(209, 101, 19, 0.802) ;
+     color: #fff;
+     outline: none;
+     border: none;
+     cursor: pointer;
+ }
+
+   /* ################# responsive ################## */
+
+   @media (max-width: 750px){
+  html{
+    font-size: 30%;
+  }
+
+.header{
+  height: 150px;
+}
+
+  .navbar .nav-items, .navbar .logo{
+    float: none;
+    display: block;
+    width: 90%;
+    text-align: center;
+  }
+
+  
+
+   .header .navbar .logo{
+    width: 60%;
+    height: 60%;
+    float: none; 
+    display: none;
+    margin:0 auto;
+
+   }
+
+   .form-wrapper .form{
+          height: 480px;
+          font-size: 2.2rem;
+          background: #fff;
+          width: 49%;
+          float: right;
+          padding: 1rem;
+      }
+
+      .form-wrapper .company-address{
+         height: 480px;
+        background: #fff;
+        float: left;
+        width: 49%;
+        padding: 1rem;
+      }
+
+   }
+
+
+
+</style>
+
+
+<section class="contact-form">
+    <div class="container">
+         <div class="form-wrapper">
+        <div class="company-address">
+            <div class="address-group">
+                <i class="fas fa-map-marker-alt fa-2x text-red"></i>
+                <h2 class="text-black md-head">Location</h2>
+                <p>Bangalore -560086</p>
+            </div>
+            <div class="address-group">
+                <i class="far fa-envelope fa-2x text-red"></i>
+                <h2 class="text-black md-head">Email </h2>
+                <p><a href="mailto:info@honvin.tech">info@honvin.tech</a></p>
+            </div>
+            <div class="address-group">
+                <i class="fas fa-phone-square-alt fa-2x text-red"></i>
+                <h2 class="text-black md-head">Call</h2>
+                <p><a href="tel:+917993522834">+91 7993522834</a></p>
+            </div>
+            <a href="https://honvin.tech"><img src="{% static 'image/FAVICON.png' %}" alt=""></a>
+            
+        </div>
+        <form class="form" action="/contact/" method="post"> {% csrf_token %}
+          <input type="hidden">
+            <h1 class="lg-head text-black">Contact Us</h1>
+            <p class="text-grey">Let us know your question, suggestion and concerns by filling out the form below.</p>
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" placeholder="Enter Your Name" required>
+          </div>
+            <div class="form-group">
+                <label for="phone">Phone</label>
+                <input type="text" id="phone" name="phone" placeholder="Enter Your Number" required>
+            </div>
+            <div class="form-group">
+                <label for="email">E-mail</label>
+                <input type="email" id="email" name="email" placeholder="Enter Your Email" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Message</label>
+                <textarea name="message" id="message" placeholder="Enter Your Querry" required></textarea>
+            </div>
+            <button type="submit" class="form-btn">Submit</button>
+        </form>
+        
+        </div>
+    </div>
+
+</section>
+
+<script>
+  {% if thank %}
+  alert('Thank you for reaching out to us, We will get back to you soon.')
+  {% endif %}
+</script>
+
+
+{%endblock%}

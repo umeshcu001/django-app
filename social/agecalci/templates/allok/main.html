@@ -1,0 +1,362 @@
+{% extends 'allok/basic.html' %}
+{%load static%}
+{%block metadesc%} One Stop Solutions For All Your Needs of Games, Utility, Social, etc {%endblock%}
+
+{%block title%}One Stop Solutions For All Your Needs of Games, Utility, Social, etc - HonVin Solutions {%endblock%}
+
+
+
+
+{%block body%}
+
+<style>
+
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+
+   /* ################ footer ########*/
+   
+   .footer{
+     background: url({% static 'image/nav-back.jpg'%});
+     padding: 2rem;
+     text-align: center;
+     background-repeat: no-repeat;
+     background-position: center;
+     background-size: cover;
+   }
+   
+   .social-media-links i{
+     margin: 2rem;
+     
+   }
+   .nav-link{
+     color: #fd7e14;
+   }
+
+  
+ 
+ .btn{
+  border: 2px solid rgba(209, 101, 19, 0.802);
+     border-radius: 1.5em;
+     color: rgba(209, 101, 19, 0.802);
+     background-color: white;
+ }
+   
+</style>
+
+
+
+<main>
+
+  <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-label="Slide 1" aria-current="true"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2" class=""></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3" class=""></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="{% static 'image/tictactoe1.jpg' %}" alt="" class="img-fluid">
+        <div class="container">
+          <div class="carousel-caption">
+            <h1>Tic Tac Toe Game</h1>
+            <p>A game in which two players alternately put Xs and Os in compartments of a
+              figure formed by two vertical lines crossing two horizontal lines and each tries to get a row of
+              three Xs or three Os before the opponent does.</p>
+            <p><a class="btn btn-lg btn-primary" href="https://honvin.tech/tictactoe-game">Play Now</a></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="carousel-item">
+        <img src="{% static 'image/blog1.jpg' %}" alt="" class="img-fluid">
+        <!-- <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="https://source.unsplash.com/1600x900/?tictactoe" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"></rect></svg> -->
+
+        <div class="container">
+          <div class="carousel-caption" style="color: black;">
+            <h1>Best Technology Blogs</h1>
+            <p>Visit to read the best blogs regarding Technology, Digital World etc.</p>
+            <p><a class="btn btn-lg btn-primary" href="https://honvin/blogs">Know more</a></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="carousel-item">
+        <img src="{% static 'image/yutube1.jpg' %}" alt="" class="img-fluid">
+        <!-- <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="https://source.unsplash.com/1600x900/?tictactoe" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"></rect></svg> -->
+
+        <div class="container">
+          <div class="carousel-caption" style="color: rgba(209, 101, 19, 0.802);">
+            <h1>Youtube Vedio Downloader</h1>
+            <p>Download Youtube vedios your choice by pasting youtube URL link Here. Get High,
+              Low, Medium Quality Vedios.</p>
+            <p><a class="btn btn-lg btn-primary" href="https://honvin.tech/youtube-vedio-downloader">Download Now</a></p>
+          </div>
+        </div>
+      </div>
+      
+
+      
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+
+  <!-- Marketing messaging and featurettes
+  ================================================== -->
+  <!-- Wrap the rest of the page in another container to center all the content. -->
+
+  <div class="container marketing my-5">
+
+    <!-- Three columns of text below the carousel -->
+    <div class="row">
+      <div class="col-lg-4">
+        <a href="https://honvin.tech/youtube-vedio-downloader"><img src="{% static 'image/yutubedown.jpg' %}" alt="" class="img-fluid"></a>
+        
+        <!-- <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"></rect><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg> -->
+
+        <h2>Youtube Vedio Downloader</h2>
+        <p>Download Youtube vedios your choice by pasting youtube URL link Here. Get High,
+          Low, Medium Quality Vedios.</p>
+        <p><a class="btn btn-secondary" href="https://honvin.tech/youtube-vedio-downloader">Dowload Now</a></p>
+      </div><!-- /.col-lg-4 -->
+      <div class="col-lg-4">
+        <a href="https://honvin.tech/pdf-to-word-converter"><img src="{% static 'image/pdftoword.jpg' %}" alt="" class="img-fluid"></a>
+        
+        <!-- <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"></rect><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg> -->
+
+        <h2>Pdf to Word Converter</h2>
+        <p>The best quality PDF to Word conversion on the market - free and easy to use.
+          No watermarks - convert PDF to Word in seconds.</p>
+        <p><a class="btn btn-secondary" href="https://honvin.tech/pdf-to-word-converter">Convert Now</a></p>
+      </div><!-- /.col-lg-4 -->
+      <div class="col-lg-4">
+        <a href="">https://honvin.tech/word-to-pdf<img src="{% static 'image/wordtopdf.jpg' %}" alt="" class="img-fluid"></a>
+        
+        <!-- <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"></rect><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg> -->
+
+        <h2>Word to Pdf Converter</h2>
+        <p>Convert documents Word to PDF exactly as the original PDF file. Convert Word to
+          PDF online, easily and free.</p>
+        <p><a class="btn btn-secondary" href="https://honvin.tech/word-to-pdf">Convert Now</a></p>
+      </div><!-- /.col-lg-4 -->
+    </div><!-- /.row -->
+
+
+    <!-- START THE FEATURETTES -->
+
+    <hr class="featurette-divider my-5">
+
+    <div class="row featurette">
+      <div class="col-md-7">
+        <h2 class="featurette-heading">Insta Image Dowloader</h2>
+        <p class="lead">Instagram Post Downloader is a service that saves any Instagram picture to any
+          gadget. No matter how you decided to apply the Ingramer Instagram downloader, you can collect
+          photos.</p>
+        <p><a class="btn btn-lg btn-primary" href="https://honvin.tech/instaimagedownloader">Download Now</a></p>
+      </div>
+      <div class="col-md-5">
+        <a href="https://honvin.tech/instaimagedownloader"><img src="{% static 'image/instadown.png' %}" alt="" class="img-fluid"></a>
+        
+        <!-- <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"></rect><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg> -->
+
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+      <div class="col-md-7 order-md-2">
+        <h2 class="featurette-heading">Rock Paper Scizer Game</h2>
+        <p class="lead">Rock Paper Scissors is a zero sum game that is usually played by two people
+          using their hands and no tools. The idea is to make shapes with an outstretched hand where each
+          shape will have a certain degree of power and will lead to an outcome.</p>
+        <p><a class="btn btn-lg btn-primary" href="https://honvin.tech/rock-paper-scizer-game">Play Now</a></p>
+      </div>
+      <div class="col-md-5 order-md-1">
+        <a href="https://honvin.tech/rock-paper-scizer-game"><img src="{% static 'image/rockpaper.jpg' %}" alt="" class="img-fluid"></a>
+        
+        <!-- <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"></rect><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg> -->
+
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+      <div class="col-md-7">
+        <h2 class="featurette-heading">Tic Tac Toe Game</h2>
+        <p class="lead">A game in which two players alternately put Xs and Os in compartments of a
+          figure formed by two vertical lines crossing two horizontal lines and each tries to get a row of
+          three Xs or three Os before the opponent does.</p>
+        <p><a class="btn btn-lg btn-primary" href="https://honvin.tech/tictactoe-game">Play Now</a></p>
+      </div>
+      <div class="col-md-5">
+        <a href="https://honvin.tech/tictactoe-game"><img src="{% static 'image/tictactoe.png' %}" alt="" class="img-fluid"></a>
+        
+        <!-- <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"></rect><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg> -->
+
+      </div>
+    </div>
+
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+      <div class="col-md-7 order-md-2">
+        <h2 class="featurette-heading">Text Utility</h2>
+        <p class="lead">A Text Utility is any word processing program that you can use to type and edit
+          text.</p>
+        <p><a class="btn btn-lg btn-primary" href="https://honvin.tech/text-utility">Try Now</a></p>
+      </div>
+      <div class="col-md-5 order-md-1">
+        <a href="https://honvin.tech/text-utility"><img src="{% static 'image/textutils.png' %}" alt="" class="img-fluid"></a>
+        
+        <!-- <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"></rect><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg> -->
+
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+      <div class="col-md-7">
+        <h2 class="featurette-heading">Number Guessing Game</h2>
+        <p class="lead">The game is two-person game called Guess the Number. The first player thinks
+        of an integer within a known range. ... If the guess is incorrect, then the first player tells
+        the second player whether the guess was too high or too low. Eventually, the second player
+        guesses the correct number.</p>
+        <p><a class="btn btn-lg btn-primary" href="https://honvin.tech/number-guess-game">Play Now</a></p>
+      </div>
+      <div class="col-md-5">
+        <a href="https://honvin.tech/number-guess-game"><img src="{% static 'image/numguess.png' %}" alt="" class="img-fluid"></a>
+        
+        <!-- <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"></rect><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg> -->
+
+      </div>
+    </div>
+
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+      <div class="col-md-7 order-md-2">
+        <h2 class="featurette-heading">Currency Converter</h2>
+        <p class="lead">The currency converter application, called Currency Converter, converts amounts
+          from one currency to two others.</p>
+        <p><a class="btn btn-lg btn-primary" href="https://honvin.tech/currencyconverter">Convert Now</a></p>
+      </div>
+      <div class="col-md-5 order-md-1">
+        <a href="https://honvin.tech/currencyconverter"><img src="{% static 'image/currencyconverter.png' %}" alt="" class="img-fluid"></a>
+        
+        <!-- <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"></rect><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg> -->
+
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+      <div class="col-md-7">
+        <h2 class="featurette-heading">Age Calculator</h2>
+        <p class="lead">Age calculator finds the age based on the date of birth and tells, how old are
+          you exactly. It is an online calender tool specially programmed to find the exact age of a
+          person or an animal.</p>
+        <p><a class="btn btn-lg btn-primary" href="https://honvin.tech/age-calculator">Try Now</a></p>
+      </div>
+      <div class="col-md-5">
+        <a href="https://honvin.tech/age-calculator"><img src="{% static 'image/agecalci.png' %}" alt="" class="img-fluid"></a>
+        
+        <!-- <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"></rect><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg> -->
+
+      </div>
+    </div>
+
+     <hr class="featurette-divider">
+
+    <div class="row featurette">
+      <div class="col-md-7 order-md-2">
+        <h2 class="featurette-heading">Calculator</h2>
+        <p class="lead">A calculator is a machine which allows people to do math operations more
+          easily. For example, most calculators will add, subtract, multiply, and divide. Some also do
+          square roots, and more complex calculators can help with calculus and draw function graphs.
+          Calculators are found everywhere.</p>
+        <p><a class="btn btn-lg btn-primary" href="https://honvin.tech/calculator">Learn more</a></p>
+      </div>
+      <div class="col-md-5 order-md-1">
+        <a href="https://honvin.tech/calculator"><img src="{% static 'image/calculator.png' %}" alt="" class="img-fluid"></a>
+        
+        <!-- <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"></rect><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg> -->
+
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+      <div class="col-md-7">
+        <h2 class="featurette-heading">Password Generator</h2>
+        <p class="lead">A password generator is a software tool that creates random or customized
+          passwords for users. It helps users create stronger passwords that provide greater security for
+          a given type of access.</p>
+        <p><a class="btn btn-lg btn-primary" href="https://honvin.tech/password-generator">Try Now</a></p>
+      </div>
+      <div class="col-md-5">
+        <a href="https://honvin.tech/password-generator"><img src="{% static 'image/passgen.jpeg' %}" alt="" class="img-fluid"></a>
+        
+        <!-- <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"></rect><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg> -->
+
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+      <div class="col-md-7 order-md-2">
+        <h2 class="featurette-heading">Social Connect</h2>
+        <p class="lead">Social media refers to the means of interactions among people in which they
+          create, share, and/or exchange information and ideas in virtual communities and networks.</p>
+        <p><a class="btn btn-lg btn-primary" href="https://honvin.tech/social">Learn more</a></p>
+      </div>
+      <div class="col-md-5 order-md-1">
+        <a href="https://honvin.tech/social">
+
+          <img src="{% static 'image/social.jpg' %}" alt="" class="img-fluid">
+        </a>
+        <!-- <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"></rect><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg> -->
+
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+      <div class="col-md-7">
+        <h2 class="featurette-heading">URL Shortener</h2>
+        <p class="lead">A URL shortener is a service that is used to create short links from very long
+          URLs. Usually, short links have the size of one third or even one-fourth of the original URL,
+          which makes them easier to type, present, or tweet.</p>
+        <p><a class="btn btn-lg btn-primary" href="https://honvin.tech/url-shortener">Try Now</a></p>
+      </div>
+      <div class="col-md-5">
+        <a href="https://honvin.tech/url-shortener"><img src="{% static 'image/url.png' %}" alt="" class="img-fluid"></a>
+        
+        <!-- <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"></rect><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg> -->
+
+      </div>
+    </div>
+
+    <!-- /END THE FEATURETTES -->
+
+  </div><!-- /.container -->
+
+
+</main>
+
+    {%endblock%}

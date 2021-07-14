@@ -1,0 +1,78 @@
+{% extends 'allok/basic.html' %}
+{%load static%}
+{%block link%}https://honvin.tech/blogs/ {%endblock%}
+{%block metadesc%} Visit here for the best blogs regarding technology, Science etc. {%endblock%}
+{%block link1%}https://honvin.tech/blogs/ {%endblock%}
+{%block title%}Blogs - HonVin Solutions {%endblock%}
+
+
+
+{%block body%}
+
+
+<main  class="my-5">
+
+
+  <div class="bg-dark text-secondary px-4 py-5 text-center">
+    <div class="py-5">
+      <h1 class="display-5 fw-bold text-white">Blogs - HonVin Solutions</h1>
+      <div class="col-lg-6 mx-auto">
+        <p class="fs-5 mb-4">Read here the best blogs regarding the techlogy etc.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  {% for item in myposts %}
+
+<div class="px-4 pt-5 my-5 text-center border-bottom rounded-3 border shadow-lg">
+  <strong class="d-inline-block mb-2 text-primary">{{item.field}}</strong>
+  <h1 class="display-4 fw-bold">{{item.title}}</h1>
+  <div class="mb-1 text-muted">{{item.date}}</div>
+  <div class="col-lg-6 mx-auto">
+    <p class="lead mb-4">{{item.titledesc}}</p>
+    <div class="d-grid gap-2 d-sm-flex justify-content-sm-center mb-5">
+      <a href="blogpost/{{item.post_id}}"><button type="button" class="btn btn-primary btn-lg px-4 me-sm-3">Read More</button></a>
+    </div>
+  </div>
+  <div class="overflow-hidden" style="max-height: 30vh;">
+    <div class="container px-5 shadow-lg">
+      <a href="https://honvin.tech/blogs/blogpost/{{item.post_id}}"><img src="/media/{{item.thumbnail}}" class="img-fluid border rounded-3 shadow-lg mb-4" alt="{{item.mainalt}}" width="700" height="500" loading="lazy"></a>
+    </div>
+  </div>
+</div>
+{%endfor%}
+
+
+
+
+
+
+
+   {% for items in mypost %}
+<div class="px-4 pt-5 my-5 text-center border-bottom rounded-3 border shadow-lg">
+  <strong class="d-inline-block mb-2 text-primary">{{items.field1}}</strong>
+  <h1 class="display-4 fw-bold">{{items.title1}}</h1>
+  <div class="mb-1 text-muted">{{items.date1}}</div>
+  <div class="col-lg-6 mx-auto">
+    <p class="lead mb-4">{{items.titledesc1}}</p>
+    <div class="d-grid gap-2 d-sm-flex justify-content-sm-center mb-5">
+      <a href="blogsec/{{items.post_id1}}"><button type="button" class="btn btn-primary btn-lg px-4 me-sm-3">Read More</button></a>
+    </div>
+  </div>
+  <div class="overflow-hidden" style="max-height: 30vh;">
+    <div class="container px-5 shadow-lg">
+      <a href="https://honvin.tech/blogs/blogsec/{{items.post_id1}}"><img src="/media/{{items.thumbnail1}}" class="img-fluid border rounded-3 shadow-lg mb-4" alt="{{items.mainalt1}}" width="700" height="500" loading="lazy"></a>
+    </div>
+  </div>
+</div>
+{%endfor%}
+
+
+
+
+
+</main>
+
+
+    {%endblock%}

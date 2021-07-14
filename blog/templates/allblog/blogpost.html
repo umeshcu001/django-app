@@ -1,0 +1,195 @@
+{% extends 'allok/basic.html' %}
+{%load static%}
+
+{%block link%}https://honvin.tech/blogs/blogpost/{{post.post_id}} {%endblock%}
+{%block metadesc%} {{post.metadesc}} {%endblock%}
+{%block keywords%} {{post.keywords}} {%endblock%}
+{%block link1%}https://honvin.tech/blogs/blogpost/{{post.post_id}} {%endblock%}
+{%block title%}{{post.title}} - HonVin Solutions {%endblock%}
+
+{% block ga%} <script data-ad-client="ca-pub-3354532920867878" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script> {% endblock %}
+
+
+{%block body%}
+<main class="my-5">
+  <div class="row flex-lg-row-reverse align-items-center g-5 py-5 my-5 px-5 rounded bg-light">
+    <div class="col-10 col-sm-8 col-lg-6">
+      <a href="{{post.mainimglink}}"><img src="{{post.mainimg.url}}" class="d-block mx-lg-auto img-fluid"alt="{{post.mainalt}}" width="700" height="500" loading="lazy"></a>
+        
+    </div>
+    <div class="col-lg-6">
+
+      <p class="blog-post-meta">{{post.date}} by <a href="{{post.authorlink}}">{{post.author}}</a></p>
+      <br><br><br>
+
+
+      <h1 class="display-5 fw-bold lh-1 mb-3">{{post.title}}</h1>
+      <p class="lead">{{post.titledesc}}</p>
+      <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+      </div>
+    </div>
+  </div>
+
+  <div class="container px-5 py-5 my-5">
+
+    <h2>{{post.firsthead}}</h2>
+    <p>{{post.firstpara}}</p>
+    <ul>
+      <li>{{post.list1}}</li>
+      <li>{{post.list2}}</li>
+      <li>{{post.list3}}</li>
+      <li>{{post.list4}}</li>
+      <li>{{post.list5}}</li>
+      <li>{{post.list6}}</li>
+    </ul>
+    <p>{{post.listnpara}}</p>
+    <h2>{{post.subhead}}</h2>
+    <p>{{post.subpara}}</p>
+  </div>
+  <div class="container my-5">
+    <div class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3 border shadow-lg">
+      <div class="col-lg-7 p-3 p-lg-5 pt-lg-3">
+        <h2 class="display-4 fw-bold lh-1">{{post.imagehead}}</h2>
+        <p class="lead">{{post.imagepara}}</p>
+        <div class="d-grid gap-2 d-md-flex justify-content-md-start mb-4 mb-lg-3">
+        </div>
+      </div>
+      <div class="col-lg-4 offset-lg-1 p-0 overflow-hidden shadow-lg">
+        <a href="{{post.imagelinkc}}"><img class="rounded-lg-3 img-fluid" src="{{post.imgc.url}}" alt="{{post.imgcalt}}" width="720"></a>
+      </div>
+    </div>
+  </div>
+
+	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- main -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7651034757713304"
+     data-ad-slot="5769909571"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+
+
+  <div class="container">
+
+
+
+    <div class="px-4 pt-5 my-5 text-center border-bottom">
+      <h2 class="display-4 fw-bold">{{post.centerhead}}</h2>
+      <div class="mx-auto">
+        <p class="lead">{{post.centerpara}}</p>
+        <div class="d-grid gap-2 d-sm-flex justify-content-sm-center mb-5">
+        </div>
+      </div>
+      <div class="overflow-hidden" style="max-height: 30vh;">
+        <div class="container px-5">
+          <a href="{{post.lastimglink}}"><img src="{{post.lastimg.url}}" class="img-fluid border rounded-3 shadow-lg mb-4" alt="{{post.lastimgalt}}"
+              width="700" height="500" loading="lazy"></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="container my-5 px-5 py-5">
+      <h2>{{post.shead1}}</h2>
+      <p>{{post.sdesc1}}</p>
+      <h2>{{post.shead2}}</h2>
+      <p>{{post.sdesc2}}</p>
+      <h2>{{post.shead3}}</h2>
+      <p>{{post.sdesc3}}</p>
+    </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+ <div class="container my-5">
+    <div class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3 border shadow-lg">
+      <div class="col-lg-7 p-3 p-lg-5 pt-lg-3">
+        <h2 class="display-4 fw-bold lh-1">{{post.imagehead1}}</h2>
+        <p class="lead">{{post.imagepara1}}</p>
+        <div class="d-grid gap-2 d-md-flex justify-content-md-start mb-4 mb-lg-3">
+        </div>
+      </div>
+      <div class="col-lg-4 offset-lg-1 p-0 overflow-hidden shadow-lg">
+        <a href="{{post.imagelinkc1}}"><img class="rounded-lg-3 img-fluid" src="{{post.imgc1.url}}" alt="{{post.imgcalt1}}" width="720"></a>
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class="container px-5 py-5 my-5">
+
+    <h2>{{post.firsthead1}}</h2>
+    <p>{{post.firstpara1}}</p>
+    <ul>
+      <li>{{post.list11}}</li>
+      <li>{{post.list21}}</li>
+      <li>{{post.list31}}</li>
+      <li>{{post.list41}}</li>
+      <li>{{post.list51}}</li>
+      <li>{{post.list61}}</li>
+    </ul>
+    <p>{{post.listnpara1}}</p>
+    <h2>{{post.subhead1}}</h2>
+    <p>{{post.subpara1}}</p>
+  </div>
+
+
+
+
+ <div class="px-4 pt-5 my-5 text-center border-bottom">
+      <h2 class="display-4 fw-bold">{{post.centerhead1}}</h2>
+      <div class="mx-auto">
+        <p class="lead">{{post.centerpara1}}</p>
+        <div class="d-grid gap-2 d-sm-flex justify-content-sm-center mb-5">
+        </div>
+      </div>
+      <div class="overflow-hidden" style="max-height: 30vh;">
+        <div class="container px-5">
+          <a href="{{post.lastimglink1}}"><img src="{{post.lastimg1.url}}" class="img-fluid border rounded-3 shadow-lg mb-4" alt="{{post.lastimgalt1}}"
+              width="700" height="500" loading="lazy"></a>
+        </div>
+      </div>
+    </div>
+
+
+<div class="px-4 pt-5 my-5 text-center container>
+<a href="https://honvin.tech/blogs"><button type="button" class="btn btn-primary btn-lg px-4 me-sm-3">Read more Articles from HonVin.</button></a>
+ </div>
+
+<div class="fb-share-button container px-5 mx-5" data-href="https://honvin.tech/blogs/blogpost/&#123;&#123;post_id&#125;&#125;" data-layout="button" data-size="large"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fhonvin.tech%2Fblogs%2Fblogpost%2F%257B%257Bpost_id%257D%257D&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Share on Facebook</a></div>
+
+<div class="fb-comments container px-5 mx-5" data-href="https://honvin.tech/blogs/blogpost/{{post_id}}" data-width="160" data-numposts="15"></div>
+
+
+
+    <div class="p-4 mb-3 bg-light rounded px-5">
+      <h4 class="fst-italic">About</h4>
+      <p class="mb-0">Writing brief about HonVin</p>
+    </div>
+
+
+
+
+
+
+</main>
+
+
+
+
+{%endblock%}

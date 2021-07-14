@@ -1,0 +1,228 @@
+{% extends 'allok/basic.html' %}
+{%load static%}
+
+{%block link%}https://honvin.tech/blogs/blogsec/{{post.post_id1}} {%endblock%}
+{%block metadesc%} {{post.metadesc1}} {%endblock%}
+{%block keywords%} {{post.keywords1}} {%endblock%}
+{%block link1%}https://honvin.tech/blogs/blogsec/{{post.post_id1}} {%endblock%}
+{%block title%}{{post.title1}} - HonVin Solutions {%endblock%}
+
+
+{%block body%}
+
+<main class="my-5">
+  <div class="row flex-lg-row-reverse align-items-center g-5 py-5 my-5 px-5 rounded bg-light">
+    <div class="col-10 col-sm-8 col-lg-6">
+      <a href="{{post.mainimglink1}}"><img src="{{post.mainimg1.url}}" class="d-block mx-lg-auto img-fluid"alt="{{post.mainalt1}}" width="700" height="500" loading="lazy"></a>
+        
+    </div>
+    <div class="col-lg-6">
+
+      <p class="blog-post-meta">{{post.date1}} by <a href="{{post.authorlink1}}">{{post.author1}}</a></p>
+      <br><br><br>
+
+
+      <h1 class="display-5 fw-bold lh-1 mb-3">{{post.title1}}</h1>
+      <p class="lead">{{post.titledesc1}}</p>
+      <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+      </div>
+    </div>
+  </div>
+
+  <div class="container px-5 py-5 my-5">
+
+    <h2>{{post.firsthead11}}</h2>
+    <p>{{post.firstpara11}}</p>
+    <ul>
+      <li>{{post.list111}}</li>
+      <li>{{post.list211}}</li>
+      <li>{{post.list311}}</li>
+      <li>{{post.list411}}</li>
+      <li>{{post.list511}}</li>
+      <li>{{post.list611}}</li>
+    </ul>
+    <p>{{post.listnpara11}}</p>
+    <h2>{{post.subhead11}}</h2>
+    <p>{{post.subpara11}}</p>
+  </div>
+
+
+  <div class="px-4 py-5 my-5 text-center rounded-3 border shadow-lg">
+    <h2 class="display-5 fw-bold">{{post.chead1}}</h2>
+    <div class="col-lg-6 mx-auto">
+      <p class="lead mb-4">{{post.cpara1}}</p>
+      <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+      </div>
+    </div>
+  </div>
+
+
+<div class="container col-xxl-8 px-4 py-5 rounded-3 border shadow-lg">
+    <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+      <div class="col-10 col-sm-8 col-lg-6">
+        <a href="{{post.img1link}}"><img src="{{post.img1.url}}" class="d-block mx-lg-auto img-fluid" alt="{{post.img1alt}}" width="700" height="500" loading="lazy"></a>
+      </div>
+      <div class="col-lg-6">
+        <h3 class="display-5 fw-bold lh-1 mb-3">{{post.imghead1}}</h3>
+        <p class="lead">{{post.img1para}}</p>
+        <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class="container col-xxl-8 px-4 py-5 rounded-3 border shadow-lg">
+    <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+      <div class="col-10 col-sm-8 col-lg-6">
+        <a href="{{post.img2link}}"><img src="{{post.img2.url}}" class="d-block mx-lg-auto img-fluid" alt="{{post.img2alt}}" width="700" height="500" loading="lazy"></a>
+      </div>
+      <div class="col-lg-6">
+        <h3 class="display-5 fw-bold lh-1 mb-3">{{post.imghead2}}</h3>
+        <p class="lead">{{post.img2para}}</p>
+        <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="container col-xxl-8 px-4 py-5 rounded-3 border shadow-lg">
+    <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+      <div class="col-10 col-sm-8 col-lg-6">
+        <a href="{{post.img3link}}"><img src="{{post.img3.url}}" class="d-block mx-lg-auto img-fluid" alt="{{post.img3alt}}" width="700" height="500" loading="lazy"></a>
+      </div>
+      <div class="col-lg-6">
+        <h3 class="display-5 fw-bold lh-1 mb-3">{{post.imghead3}}</h3>
+        <p class="lead">{{post.img3para}}</p>
+        <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  
+<div class="px-4 pt-5 my-5 text-center border-bottom rounded-3 border shadow-lg">
+    <h2 class="display-4 fw-bold">{{post.sihead}}</h2>
+    <div class="col-lg-6 mx-auto">
+      <p class="lead mb-4">{{post.sipara}}</p>
+      <div class="d-grid gap-2 d-sm-flex justify-content-sm-center mb-5">
+      </div>
+    </div>
+    <div class="overflow-hidden" style="max-height: 30vh;">
+      <div class="container px-5">
+        <a href="{{post.siimglink}}"><img src="{{post.siimg.url}}" class="img-fluid border rounded-3 shadow-lg mb-4" alt="{{post.siimgalt}}" width="700" height="500" loading="lazy"></a>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <div class="px-4 py-5 my-5 text-center rounded-3 border shadow-lg">
+    <h2 class="display-5 fw-bold">{{post.chead2}}</h2>
+    <div class="col-lg-6 mx-auto">
+      <p class="lead mb-4">{{post.cpara2}}</p>
+      <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+      </div>
+    </div>
+  </div>
+
+ 
+<div class="container col-xxl-8 px-4 py-5 rounded-3 border shadow-lg">
+  <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+    <div class="col-10 col-sm-8 col-lg-6">
+      <a href="{{post.img11link}}"><img src="{{post.img11.url}}" class="d-block mx-lg-auto img-fluid" alt="{{post.img11alt}}" width="700" height="500" loading="lazy"></a>
+    </div>
+    <div class="col-lg-6">
+      <h3 class="display-5 fw-bold lh-1 mb-3">{{post.imghead11}}</h3>
+      <p class="lead">{{post.img11para}}</p>
+      <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="container col-xxl-8 px-4 py-5 rounded-3 border shadow-lg">
+  <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+    <div class="col-10 col-sm-8 col-lg-6">
+      <a href="{{post.img21link}}"><img src="{{post.img21.url}}" class="d-block mx-lg-auto img-fluid" alt="{{post.img21alt}}" width="700" height="500" loading="lazy"></a>
+    </div>
+    <div class="col-lg-6">
+      <h3 class="display-5 fw-bold lh-1 mb-3">{{post.imghead21}}</h3>
+      <p class="lead">{{post.img21para}}</p>
+      <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="container col-xxl-8 px-4 py-5 rounded-3 border shadow-lg">
+  <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+    <div class="col-10 col-sm-8 col-lg-6">
+      <a href="{{post.img31link}}"><img src="{{post.img31.url}}" class="d-block mx-lg-auto img-fluid" alt="{{post.img31alt}}" width="700" height="500" loading="lazy"></a>
+    </div>
+    <div class="col-lg-6">
+      <h3 class="display-5 fw-bold lh-1 mb-3">{{post.imghead31}}</h3>
+      <p class="lead">{{post.img31para}}</p>
+      <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="container px-5 py-5 my-5">
+
+  <h2>{{post.firsthead1}}</h2>
+  <p>{{post.firstpara1}}</p>
+  <ul>
+    <li>{{post.list11}}</li>
+    <li>{{post.list21}}</li>
+    <li>{{post.list31}}</li>
+    <li>{{post.list41}}</li>
+    <li>{{post.list51}}</li>
+    <li>{{post.list61}}</li>
+  </ul>
+  <p>{{post.listnpara1}}</p>
+
+<br>
+<br>
+
+<a href="https://honvin.tech/blogs"><button type="button" class="btn btn-primary btn-lg px-4 me-sm-3">Read more Articles from HonVin.</button></a>
+
+  </div>
+
+
+
+  </main>
+
+
+  <div class="fb-share-button container px-5 mx-5" data-href="https://honvin.tech/blogs/blogpost/&#123;&#123;post_id&#125;&#125;" data-layout="button" data-size="large"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fhonvin.tech%2Fblogs%2Fblogpost%2F%257B%257Bpost_id%257D%257D&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Share on Facebook</a></div>
+
+<div class="fb-comments container px-5 mx-5" data-href="https://honvin.tech/blogs/blogpost/{{post_id}}" data-width="160" data-numposts="15"></div>
+
+
+
+    <div class="p-4 mb-3 bg-light rounded px-5">
+      <h4 class="fst-italic">About</h4>
+      <p class="mb-0">Writing brief about HonVin</p>
+    </div>
+
+{%endblock%}
+
+
+
+
+
+
+
+

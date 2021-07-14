@@ -1,0 +1,101 @@
+{% extends 'allok/basic.html' %}
+{%load static%}
+{%block metadesc%} {{post.subhead1}} {%endblock%}
+
+{%block title%}{{post.title}} - HonVin Solutions {%endblock%}
+
+
+
+
+{%block body%}
+<main class="my-5">
+  <div class="row flex-lg-row-reverse align-items-center g-5 py-5 my-5 px-5 rounded bg-light">
+    <div class="col-10 col-sm-8 col-lg-6">
+      <a href="{{post.mainimglink}}"><img src="{{post.mainimg.url}}" class="d-block mx-lg-auto img-fluid"alt="{{post.mainalt}}" width="700" height="500" loading="lazy"></a>
+        
+    </div>
+    <div class="col-lg-6">
+
+      <p class="blog-post-meta">{{post.date}} by <a href="{{post.authorlink}}">{{post.author}}</a></p>
+      <br><br><br>
+
+
+      <h1 class="display-5 fw-bold lh-1 mb-3">{{post.title}}</h1>
+      <p class="lead">{{post.titledesc}}</p>
+      <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+      </div>
+    </div>
+  </div>
+
+  <div class="container px-5 py-5 my-5">
+
+    <h2>{{post.firsthead}}</h2>
+    <p>{{post.firstpara}}</p>
+    <ul>
+      <li>{{post.list1}}</li>
+      <li>{{post.list2}}</li>
+      <li>{{post.list3}}</li>
+      <li>{{post.list4}}</li>
+      <li>{{post.list5}}</li>
+      <li>{{post.list6}}</li>
+    </ul>
+    <p>{{post.listnpara}}</p>
+    <h2>{{post.subhead}}</h2>
+    <p>{{post.subpara}}</p>
+  </div>
+  <div class="container my-5">
+    <div class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3 border shadow-lg">
+      <div class="col-lg-7 p-3 p-lg-5 pt-lg-3">
+        <h1 class="display-4 fw-bold lh-1">{{post.imagehead}}</h1>
+        <p class="lead">{{post.imagepara}}</p>
+        <div class="d-grid gap-2 d-md-flex justify-content-md-start mb-4 mb-lg-3">
+        </div>
+      </div>
+      <div class="col-lg-4 offset-lg-1 p-0 overflow-hidden shadow-lg">
+        <a href="{{post.imagelinkc}}"><img class="rounded-lg-3 img-fluid" src="{{post.imgc.url}}" alt="{{post.imgcalt}}" width="720"></a>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+
+
+
+    <div class="px-4 pt-5 my-5 text-center border-bottom">
+      <h1 class="display-4 fw-bold">{{post.centerhead}}</h1>
+      <div class="col-lg-6 mx-auto">
+        <p class="lead mb-4">{{post.centerpara}}</p>
+        <div class="d-grid gap-2 d-sm-flex justify-content-sm-center mb-5">
+        </div>
+      </div>
+      <div class="overflow-hidden" style="max-height: 30vh;">
+        <div class="container px-5">
+          <a href="{{post.lastimglink}}"><img src="{{post.lastimg.url}}" class="img-fluid border rounded-3 shadow-lg mb-4" alt="{{post.lastimgalt}}"
+              width="700" height="500" loading="lazy"></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="container my-5 px-5 py-5">
+      <h2>{{post.shead1}}</h2>
+      <p>{{post.sdesc1}}</p>
+      <h2>{{post.shead2}}</h2>
+      <p>{{post.sdesc2}}</p>
+      <h2>{{post.shead3}}</h2>
+      <p>{{post.sdesc3}}</p>
+    </div>
+    </div>
+
+
+    <div class="p-4 mb-3 bg-light rounded px-5">
+      <h4 class="fst-italic">About</h4>
+      <p class="mb-0">Writing brief about HonVin</p>
+    </div>
+
+
+
+</main>
+
+
+
+
+{%endblock%}
